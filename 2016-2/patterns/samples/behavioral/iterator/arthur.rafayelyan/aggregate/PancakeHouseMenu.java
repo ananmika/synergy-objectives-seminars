@@ -1,4 +1,4 @@
-package menu;
+package aggregate;
 
 import iterator.Iterator;
 import iterator.PancakeHouseMenuIterator;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author Arthur Rafayelyan
  * @since 9/23/2016.
  */
-public class PancakeHouseMenu{
+public class PancakeHouseMenu implements Menu{
     public ArrayList menuItems;
 
     public PancakeHouseMenu() {
@@ -39,8 +39,9 @@ public class PancakeHouseMenu{
         menuItems.add(menuItem);
     }
 
+    @Override
     public Iterator createIterator() {
         return new PancakeHouseMenuIterator(menuItems);
     }
-    // other menu methods here
+    // other aggregate methods here
 }

@@ -1,16 +1,18 @@
-package menu;
-
+import aggregate.Menu;
 import iterator.Iterator;
+import aggregate.DinerMenu;
+import aggregate.MenuItem;
+import aggregate.PancakeHouseMenu;
 
 /**
  * @author Arthur Rafayelyan
  * @since 9/23/2016.
  */
 public class Waitress {
-    PancakeHouseMenu pancakeHouseMenu;
-    DinerMenu dinerMenu;
+    private Menu pancakeHouseMenu;
+    private Menu dinerMenu;
 
-    public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu) {
+    public Waitress(Menu pancakeHouseMenu, Menu dinerMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
         this.dinerMenu = dinerMenu;
     }

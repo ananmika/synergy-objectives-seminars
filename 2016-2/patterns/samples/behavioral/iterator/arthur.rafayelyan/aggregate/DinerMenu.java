@@ -1,4 +1,4 @@
-package menu;
+package aggregate;
 
 import iterator.DinerMenuIterator;
 import iterator.Iterator;
@@ -7,7 +7,7 @@ import iterator.Iterator;
  * @author Arthur Rafayelyan
  * @since 9/23/2016.
  */
-public class DinerMenu {
+public class DinerMenu implements Menu{
     private static final int MAX_ITEMS = 6;
     private int numberOfItems = 0;
     private MenuItem[] menuItems;
@@ -29,13 +29,14 @@ public class DinerMenu {
                         boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price);
         if (numberOfItems >= MAX_ITEMS) {
-            System.err.println("Sorry, menu is full! Can’t add item to menu");
+            System.err.println("Sorry, aggregate is full! Can’t add item to aggregate");
         } else {
             menuItems[numberOfItems] = menuItem;
             numberOfItems = numberOfItems + 1;
         }
     }
 
+    @Override
     public Iterator createIterator() {
         return new DinerMenuIterator(menuItems);
     }

@@ -1,6 +1,6 @@
 package iterator;
 
-import menu.MenuItem;
+import aggregate.MenuItem;
 
 /**
  * @author Arthur Rafayelyan

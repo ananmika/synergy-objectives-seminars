@@ -1,8 +1,8 @@
+import aggregate.Menu;
 import iterator.PancakeHouseMenuIterator;
-import menu.DinerMenu;
-import menu.MenuItem;
-import menu.PancakeHouseMenu;
-import menu.Waitress;
+import aggregate.DinerMenu;
+import aggregate.MenuItem;
+import aggregate.PancakeHouseMenu;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,8 +14,8 @@ public class MenuTestDrive {
 
 
     public static void main(String args[]) {
-        PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
-        DinerMenu dinerMenu = new DinerMenu();
+        Menu pancakeHouseMenu = new PancakeHouseMenu();
+        Menu dinerMenu = new DinerMenu();
         Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
         waitress.printMenu();
     }
@@ -24,8 +24,8 @@ public class MenuTestDrive {
     public void testMenuIterator() {
 
         /**
-         * Create new menu.PancakeHouseMenu
-         * add the menu items
+         * Create new aggregate.PancakeHouseMenu
+         * add the aggregate items
          * And create iterator.PancakeHouseMenuIterator
          * */
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
