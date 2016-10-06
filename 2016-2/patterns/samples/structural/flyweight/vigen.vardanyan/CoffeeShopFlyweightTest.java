@@ -7,21 +7,22 @@ import java.util.Vector;
  * Created by Vigen.Vardanyan on 10/5/2016.
  */
 public class CoffeeShopFlyweightTest {
-    private final List<Order> orders = new Vector<Order>();
+    private final List<Order> orders = new Vector<>();
     private final Menu menu = new Menu();
 
-    void takeOrder(String flavourName, int table) {
+    private void takeOrder(String flavourName, int table) {
         CoffeeFlavour flavour = menu.lookup(flavourName);
         Order order = new Order(table, flavour);
         orders.add(order);
     }
 
-    void service() {
-        for (Order order : orders)
+    private void service() {
+        for (Order order : orders) {
             order.serve();
+        }
     }
 
-    String report() {
+    private String report() {
         return "\n" + menu.totalCoffeeFlavours();
     }
 

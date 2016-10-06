@@ -10,8 +10,9 @@ public class Menu {
     private Map<String, CoffeeFlavour> flavours = new ConcurrentHashMap<>();
 
     CoffeeFlavour lookup(String flavorName) {
-        if (!flavours.containsKey(flavorName))
+        if (!flavours.containsKey(flavorName)) {
             flavours.put(flavorName, new CoffeeFlavour(flavorName));
+        }
         return flavours.get(flavorName);
     }
 
