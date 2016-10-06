@@ -31,10 +31,14 @@ public class CoffeeShopFlyweightTest {
 
         shop.takeOrder("Cappuccino", 2);
         shop.takeOrder("Espresso", 1);
+        shop.takeOrder("Americano", 4);
         shop.takeOrder("Cappuccino", 97);
+        shop.takeOrder("Americano", 87);
         shop.takeOrder("Espresso", 3);
         shop.takeOrder("Cappuccino", 3);
+        shop.takeOrder("Americano", 5);
         shop.takeOrder("Espresso", 96);
+        shop.takeOrder("Americano", 121);
         shop.takeOrder("Cappuccino", 121);
         shop.takeOrder("Espresso", 121);
 
