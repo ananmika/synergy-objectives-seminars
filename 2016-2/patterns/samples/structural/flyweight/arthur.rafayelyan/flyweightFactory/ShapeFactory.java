@@ -1,9 +1,9 @@
-package flyweightPattern.flyweightFactory;
+package structural.flyweight.flyweightFactory;
 
-import flyweightPattern.concreteFlyweight.Circle;
-import flyweightPattern.concreteFlyweight.Point;
-import flyweightPattern.concreteFlyweight.Square;
-import flyweightPattern.flyweight.Shape;
+import structural.flyweight.concreteFlyweight.Circle;
+import structural.flyweight.concreteFlyweight.Point;
+import structural.flyweight.concreteFlyweight.Square;
+import structural.flyweight.flyweight.Shape;
 
 import java.util.HashMap;
 import java.util.Map;

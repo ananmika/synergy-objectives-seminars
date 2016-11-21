@@ -1,4 +1,4 @@
-package patterns.samples.behavioral.iterator.arthur.rafayelyan.iterator;
+package behavioral.iterator.iterator;
 
 /**
  * @author Arthur Rafayelyan

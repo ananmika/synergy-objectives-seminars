@@ -1,4 +1,4 @@
-package singletonPattern;
+package creational.singleton;
 
 /**
  * @author Arthur

@@ -1,10 +1,10 @@
-package flyweightPattern;
+package structural.flyweight;
 
-import flyweightPattern.concreteFlyweight.Circle;
-import flyweightPattern.flyweight.Shape;
-import flyweightPattern.flyweightFactory.ShapeFactory;
 import org.junit.Assert;
 import org.junit.Test;
+import structural.flyweight.concreteFlyweight.Circle;
+import structural.flyweight.flyweight.Shape;
+import structural.flyweight.flyweightFactory.ShapeFactory;
 
 import java.util.ArrayList;
 import java.util.List;

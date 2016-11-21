@@ -1,10 +1,10 @@
-package singleton;
+package creational.singleton;
 
 /**
  * @author Arthur Rafayelyan
  * @since 9/28/2016.
  */
-class Singleton {
+public class Singleton {
     private static volatile Singleton uniqueInstance;
     private static Integer instanceCount = 0;
 
