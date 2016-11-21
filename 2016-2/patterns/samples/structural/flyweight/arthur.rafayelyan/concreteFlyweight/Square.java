@@ -1,6 +1,6 @@
-package flyweightPattern.concreteFlyweight;
+package structural.flyweight.concreteFlyweight;
 
-import flyweightPattern.flyweight.Shape;
+import structural.flyweight.flyweight.Shape;
 
 /**
  * @author Arthur

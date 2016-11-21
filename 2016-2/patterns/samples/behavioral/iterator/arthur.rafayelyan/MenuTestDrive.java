@@ -1,8 +1,10 @@
-import aggregate.Menu;
-import iterator.PancakeHouseMenuIterator;
-import aggregate.DinerMenu;
-import aggregate.MenuItem;
-import aggregate.PancakeHouseMenu;
+package behavioral.iterator;
+
+import behavioral.iterator.aggregate.Menu;
+import behavioral.iterator.aggregate.concreteAggregate.DinerMenu;
+import behavioral.iterator.aggregate.concreteAggregate.PancakeHouseMenu;
+import behavioral.iterator.client.Waitress;
+import behavioral.iterator.iterator.concreteIterator.PancakeHouseMenuIterator;
 import org.junit.Assert;
 import org.junit.Test;
 

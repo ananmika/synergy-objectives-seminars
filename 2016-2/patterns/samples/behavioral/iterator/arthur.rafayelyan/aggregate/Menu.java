@@ -1,6 +1,6 @@
-package aggregate;
+package behavioral.iterator.aggregate;
 
-import iterator.Iterator;
+import behavioral.iterator.iterator.Iterator;
 
 /**
  * @author Arthur Rafayelyan

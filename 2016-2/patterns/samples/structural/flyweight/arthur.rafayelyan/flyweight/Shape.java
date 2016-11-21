@@ -1,4 +1,4 @@
-package flyweightPattern.flyweight;
+package structural.flyweight.flyweight;
 
 /**
  * @author Arthur

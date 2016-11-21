@@ -1,4 +1,4 @@
-package iterator;
+package behavioral.iterator.iterator;
 
 /**
  * @author Arthur Rafayelyan
